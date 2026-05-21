@@ -1,0 +1,44 @@
+[
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\main.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\main.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/main.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/main.cpp.obj"
+},
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\Constants.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\Constants.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/Constants.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/Constants.cpp.obj"
+},
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\Filters.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\Filters.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/Filters.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/Filters.cpp.obj"
+},
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\Logger.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\Logger.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/Logger.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/Logger.cpp.obj"
+},
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\Session.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\Session.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/Session.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/Session.cpp.obj"
+},
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\TextAnalyzer.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\TextAnalyzer.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/TextAnalyzer.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/TextAnalyzer.cpp.obj"
+},
+{
+  "directory": "C:/DEV/FeedbackAnalyzer_08/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DWINVER=0x0A00 -D_WIN32_WINNT=0x0A00 @CMakeFiles/feedback_analyzer.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\feedback_analyzer.dir\\src\\cpp\\UIComponents.cpp.obj -c C:\\DEV\\FeedbackAnalyzer_08\\src\\cpp\\UIComponents.cpp",
+  "file": "C:/DEV/FeedbackAnalyzer_08/src/cpp/UIComponents.cpp",
+  "output": "CMakeFiles/feedback_analyzer.dir/src/cpp/UIComponents.cpp.obj"
+}
+]
