@@ -1,0 +1,1371 @@
+Start testing: May 22 13:46 대한민국 표준시
+----------------------------------------------------------
+1/38 Testing: test_config_json_valid_loads_registry_snapshot
+1/38 Test: test_config_json_valid_loads_registry_snapshot
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_json_valid_loads_registry_snapshot"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_json_valid_loads_registry_snapshot" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_json_valid_loads_registry_snapshot"
+Randomness seeded to: 3204391976
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_json_valid_loads_registry_snapshot
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:16
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:18: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.60 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_json_valid_loads_registry_snapshot" end time: May 22 13:46 대한민국 표준시
+"test_config_json_valid_loads_registry_snapshot" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/38 Testing: test_config_json_valid_classify_anchor_negative
+2/38 Test: test_config_json_valid_classify_anchor_negative
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_json_valid_classify_anchor_negative"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_json_valid_classify_anchor_negative" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_json_valid_classify_anchor_negative"
+Randomness seeded to: 1187916011
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_json_valid_classify_anchor_negative
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:21
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:23: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_json_valid_classify_anchor_negative" end time: May 22 13:46 대한민국 표준시
+"test_config_json_valid_classify_anchor_negative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/38 Testing: test_config_json_missing_file_fails_config_parse
+3/38 Test: test_config_json_missing_file_fails_config_parse
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_json_missing_file_fails_config_parse"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_json_missing_file_fails_config_parse" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_json_missing_file_fails_config_parse"
+Randomness seeded to: 4020399352
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_json_missing_file_fails_config_parse
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:26
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:28: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_json_missing_file_fails_config_parse" end time: May 22 13:46 대한민국 표준시
+"test_config_json_missing_file_fails_config_parse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/38 Testing: test_config_json_missing_version_fails_unsupported
+4/38 Test: test_config_json_missing_version_fails_unsupported
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_json_missing_version_fails_unsupported"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_json_missing_version_fails_unsupported" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_json_missing_version_fails_unsupported"
+Randomness seeded to: 2402914724
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_json_missing_version_fails_unsupported
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:31
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:33: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.66 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_json_missing_version_fails_unsupported" end time: May 22 13:46 대한민국 표준시
+"test_config_json_missing_version_fails_unsupported" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/38 Testing: test_config_json_load_then_aggregate_anchor_shipping
+5/38 Test: test_config_json_load_then_aggregate_anchor_shipping
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_json_load_then_aggregate_anchor_shipping"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_json_load_then_aggregate_anchor_shipping" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_json_load_then_aggregate_anchor_shipping"
+Randomness seeded to: 2981369154
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_json_load_then_aggregate_anchor_shipping
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:36
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:38: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.63 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_json_load_then_aggregate_anchor_shipping" end time: May 22 13:46 대한민국 표준시
+"test_config_json_load_then_aggregate_anchor_shipping" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/38 Testing: test_config_yaml_valid_loads_default_ratios
+6/38 Test: test_config_yaml_valid_loads_default_ratios
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_yaml_valid_loads_default_ratios"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_yaml_valid_loads_default_ratios" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_yaml_valid_loads_default_ratios"
+Randomness seeded to: 385152524
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_yaml_valid_loads_default_ratios
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:45
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:47: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_yaml_valid_loads_default_ratios" end time: May 22 13:46 대한민국 표준시
+"test_config_yaml_valid_loads_default_ratios" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/38 Testing: test_config_yaml_valid_anchor_classify_negative
+7/38 Test: test_config_yaml_valid_anchor_classify_negative
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_yaml_valid_anchor_classify_negative"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_yaml_valid_anchor_classify_negative" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_yaml_valid_anchor_classify_negative"
+Randomness seeded to: 2524261797
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_yaml_valid_anchor_classify_negative
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:50
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:52: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_yaml_valid_anchor_classify_negative" end time: May 22 13:46 대한민국 표준시
+"test_config_yaml_valid_anchor_classify_negative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/38 Testing: test_config_yaml_invalid_hub_fails_invalid_hub_config
+8/38 Test: test_config_yaml_invalid_hub_fails_invalid_hub_config
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_yaml_invalid_hub_fails_invalid_hub_config"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_yaml_invalid_hub_fails_invalid_hub_config" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_yaml_invalid_hub_fails_invalid_hub_config"
+Randomness seeded to: 818728889
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_yaml_invalid_hub_fails_invalid_hub_config
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:55
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:57: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_yaml_invalid_hub_fails_invalid_hub_config" end time: May 22 13:46 대한민국 표준시
+"test_config_yaml_invalid_hub_fails_invalid_hub_config" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/38 Testing: test_config_yaml_missing_file_fails_parse_error
+9/38 Test: test_config_yaml_missing_file_fails_parse_error
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_yaml_missing_file_fails_parse_error"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_yaml_missing_file_fails_parse_error" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_yaml_missing_file_fails_parse_error"
+Randomness seeded to: 2865106045
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_yaml_missing_file_fails_parse_error
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:60
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:62: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.55 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_yaml_missing_file_fails_parse_error" end time: May 22 13:46 대한민국 표준시
+"test_config_yaml_missing_file_fails_parse_error" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/38 Testing: test_config_yaml_load_ratios_enum_yaml_format
+10/38 Test: test_config_yaml_load_ratios_enum_yaml_format
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_config_yaml_load_ratios_enum_yaml_format"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_config_yaml_load_ratios_enum_yaml_format" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_config_yaml_load_ratios_enum_yaml_format"
+Randomness seeded to: 3733300377
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_config_yaml_load_ratios_enum_yaml_format
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:65
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\data_tests.cpp:67: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Failed.
+"test_config_yaml_load_ratios_enum_yaml_format" end time: May 22 13:46 대한민국 표준시
+"test_config_yaml_load_ratios_enum_yaml_format" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/38 Testing: test_parse_plain_empty_text_returns_empty_text
+11/38 Test: test_parse_plain_empty_text_returns_empty_text
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_parse_plain_empty_text_returns_empty_text"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_parse_plain_empty_text_returns_empty_text" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_parse_plain_empty_text_returns_empty_text"
+Randomness seeded to: 2654746515
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_parse_plain_empty_text_returns_empty_text
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:16
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:18: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.57 sec
+----------------------------------------------------------
+Test Failed.
+"test_parse_plain_empty_text_returns_empty_text" end time: May 22 13:46 대한민국 표준시
+"test_parse_plain_empty_text_returns_empty_text" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/38 Testing: test_parse_labelbody_colon_missing_throws_colon_missing
+12/38 Test: test_parse_labelbody_colon_missing_throws_colon_missing
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_parse_labelbody_colon_missing_throws_colon_missing"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_parse_labelbody_colon_missing_throws_colon_missing" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_parse_labelbody_colon_missing_throws_colon_missing"
+Randomness seeded to: 1561194740
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_parse_labelbody_colon_missing_throws_colon_missing
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:21
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:23: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_parse_labelbody_colon_missing_throws_colon_missing" end time: May 22 13:46 대한민국 표준시
+"test_parse_labelbody_colon_missing_throws_colon_missing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/38 Testing: test_parse_labelbody_unknown_emotion_rejects_hub_substitute
+13/38 Test: test_parse_labelbody_unknown_emotion_rejects_hub_substitute
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_parse_labelbody_unknown_emotion_rejects_hub_substitute"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_parse_labelbody_unknown_emotion_rejects_hub_substitute" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_parse_labelbody_unknown_emotion_rejects_hub_substitute"
+Randomness seeded to: 3826251364
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_parse_labelbody_unknown_emotion_rejects_hub_substitute
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:26
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:28: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.55 sec
+----------------------------------------------------------
+Test Failed.
+"test_parse_labelbody_unknown_emotion_rejects_hub_substitute" end time: May 22 13:46 대한민국 표준시
+"test_parse_labelbody_unknown_emotion_rejects_hub_substitute" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/38 Testing: test_upload_csv_missing_text_column_rejects
+14/38 Test: test_upload_csv_missing_text_column_rejects
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_upload_csv_missing_text_column_rejects"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_upload_csv_missing_text_column_rejects" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_upload_csv_missing_text_column_rejects"
+Randomness seeded to: 3775647194
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_upload_csv_missing_text_column_rejects
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:31
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:33: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Failed.
+"test_upload_csv_missing_text_column_rejects" end time: May 22 13:46 대한민국 표준시
+"test_upload_csv_missing_text_column_rejects" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/38 Testing: test_analyze_trim_anchor_stored_text
+15/38 Test: test_analyze_trim_anchor_stored_text
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_analyze_trim_anchor_stored_text"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_analyze_trim_anchor_stored_text" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_analyze_trim_anchor_stored_text"
+Randomness seeded to: 4155969724
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_analyze_trim_anchor_stored_text
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:36
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:38: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.53 sec
+----------------------------------------------------------
+Test Failed.
+"test_analyze_trim_anchor_stored_text" end time: May 22 13:46 대한민국 표준시
+"test_analyze_trim_anchor_stored_text" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/38 Testing: test_filter_negative_shipping_session_one_item
+16/38 Test: test_filter_negative_shipping_session_one_item
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_negative_shipping_session_one_item"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_negative_shipping_session_one_item" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_negative_shipping_session_one_item"
+Randomness seeded to: 866343090
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_negative_shipping_session_one_item
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:41
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:43: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_negative_shipping_session_one_item" end time: May 22 13:46 대한민국 표준시
+"test_filter_negative_shipping_session_one_item" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/38 Testing: test_download_csv_anchor_one_data_row
+17/38 Test: test_download_csv_anchor_one_data_row
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_download_csv_anchor_one_data_row"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_download_csv_anchor_one_data_row" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_download_csv_anchor_one_data_row"
+Randomness seeded to: 680188873
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_download_csv_anchor_one_data_row
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:46
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:48: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_download_csv_anchor_one_data_row" end time: May 22 13:46 대한민국 표준시
+"test_download_csv_anchor_one_data_row" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/38 Testing: test_download_empty_fil_data_returns_not_found
+18/38 Test: test_download_empty_fil_data_returns_not_found
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_download_empty_fil_data_returns_not_found"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_download_empty_fil_data_returns_not_found" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_download_empty_fil_data_returns_not_found"
+Randomness seeded to: 3662605072
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_download_empty_fil_data_returns_not_found
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:51
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:53: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_download_empty_fil_data_returns_not_found" end time: May 22 13:46 대한민국 표준시
+"test_download_empty_fil_data_returns_not_found" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/38 Testing: test_parse_labelbody_empty_label_returns_empty_label
+19/38 Test: test_parse_labelbody_empty_label_returns_empty_label
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_parse_labelbody_empty_label_returns_empty_label"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_parse_labelbody_empty_label_returns_empty_label" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_parse_labelbody_empty_label_returns_empty_label"
+Randomness seeded to: 653241060
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_parse_labelbody_empty_label_returns_empty_label
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:60
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:62: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.57 sec
+----------------------------------------------------------
+Test Failed.
+"test_parse_labelbody_empty_label_returns_empty_label" end time: May 22 13:46 대한민국 표준시
+"test_parse_labelbody_empty_label_returns_empty_label" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/38 Testing: test_parse_labelbody_empty_body_returns_empty_body
+20/38 Test: test_parse_labelbody_empty_body_returns_empty_body
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_parse_labelbody_empty_body_returns_empty_body"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_parse_labelbody_empty_body_returns_empty_body" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_parse_labelbody_empty_body_returns_empty_body"
+Randomness seeded to: 7892520
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_parse_labelbody_empty_body_returns_empty_body
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:65
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:67: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.55 sec
+----------------------------------------------------------
+Test Failed.
+"test_parse_labelbody_empty_body_returns_empty_body" end time: May 22 13:46 대한민국 표준시
+"test_parse_labelbody_empty_body_returns_empty_body" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/38 Testing: test_filter_unknown_category_rejects_overseas_keyword
+21/38 Test: test_filter_unknown_category_rejects_overseas_keyword
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_unknown_category_rejects_overseas_keyword"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_unknown_category_rejects_overseas_keyword" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_unknown_category_rejects_overseas_keyword"
+Randomness seeded to: 3919396314
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_unknown_category_rejects_overseas_keyword
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:74
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:76: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_unknown_category_rejects_overseas_keyword" end time: May 22 13:46 대한민국 표준시
+"test_filter_unknown_category_rejects_overseas_keyword" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/38 Testing: test_filter_unknown_sentiment_rejects_angry_label
+22/38 Test: test_filter_unknown_sentiment_rejects_angry_label
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_unknown_sentiment_rejects_angry_label"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_unknown_sentiment_rejects_angry_label" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_unknown_sentiment_rejects_angry_label"
+Randomness seeded to: 770685962
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_unknown_sentiment_rejects_angry_label
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:79
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:81: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_unknown_sentiment_rejects_angry_label" end time: May 22 13:46 대한민국 표준시
+"test_filter_unknown_sentiment_rejects_angry_label" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/38 Testing: test_filter_empty_sentiment_token_rejects
+23/38 Test: test_filter_empty_sentiment_token_rejects
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_empty_sentiment_token_rejects"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_empty_sentiment_token_rejects" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_empty_sentiment_token_rejects"
+Randomness seeded to: 3775391887
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_empty_sentiment_token_rejects
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:84
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:86: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_empty_sentiment_token_rejects" end time: May 22 13:46 대한민국 표준시
+"test_filter_empty_sentiment_token_rejects" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/38 Testing: test_filter_garbage_category_string_rejects
+24/38 Test: test_filter_garbage_category_string_rejects
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_garbage_category_string_rejects"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_garbage_category_string_rejects" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_garbage_category_string_rejects"
+Randomness seeded to: 3785917113
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_garbage_category_string_rejects
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:89
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:91: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.55 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_garbage_category_string_rejects" end time: May 22 13:46 대한민국 표준시
+"test_filter_garbage_category_string_rejects" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/38 Testing: test_filter_numeric_sentiment_string_rejects
+25/38 Test: test_filter_numeric_sentiment_string_rejects
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_numeric_sentiment_string_rejects"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_numeric_sentiment_string_rejects" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_numeric_sentiment_string_rejects"
+Randomness seeded to: 376756632
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_numeric_sentiment_string_rejects
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:94
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\boundary_tests.cpp:96: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_numeric_sentiment_string_rejects" end time: May 22 13:46 대한민국 표준시
+"test_filter_numeric_sentiment_string_rejects" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/38 Testing: test_classify_anchor_text_returns_negative
+26/38 Test: test_classify_anchor_text_returns_negative
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_classify_anchor_text_returns_negative"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_classify_anchor_text_returns_negative" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_classify_anchor_text_returns_negative"
+Randomness seeded to: 1286833047
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_classify_anchor_text_returns_negative
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:18
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:20: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.57 sec
+----------------------------------------------------------
+Test Failed.
+"test_classify_anchor_text_returns_negative" end time: May 22 13:46 대한민국 표준시
+"test_classify_anchor_text_returns_negative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/38 Testing: test_aggregate_anchor_single_negative_and_shipping_one
+27/38 Test: test_aggregate_anchor_single_negative_and_shipping_one
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_aggregate_anchor_single_negative_and_shipping_one"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_aggregate_anchor_single_negative_and_shipping_one" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_aggregate_anchor_single_negative_and_shipping_one"
+Randomness seeded to: 1887518579
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_aggregate_anchor_single_negative_and_shipping_one
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:23
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:25: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_aggregate_anchor_single_negative_and_shipping_one" end time: May 22 13:46 대한민국 표준시
+"test_aggregate_anchor_single_negative_and_shipping_one" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/38 Testing: test_aggregate_subkeyword_only_shipping_zero
+28/38 Test: test_aggregate_subkeyword_only_shipping_zero
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_aggregate_subkeyword_only_shipping_zero"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_aggregate_subkeyword_only_shipping_zero" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_aggregate_subkeyword_only_shipping_zero"
+Randomness seeded to: 1760109935
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_aggregate_subkeyword_only_shipping_zero
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:28
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:30: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.55 sec
+----------------------------------------------------------
+Test Failed.
+"test_aggregate_subkeyword_only_shipping_zero" end time: May 22 13:46 대한민국 표준시
+"test_aggregate_subkeyword_only_shipping_zero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/38 Testing: test_filter_negative_shipping_returns_anchor_only
+29/38 Test: test_filter_negative_shipping_returns_anchor_only
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_filter_negative_shipping_returns_anchor_only"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_filter_negative_shipping_returns_anchor_only" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_filter_negative_shipping_returns_anchor_only"
+Randomness seeded to: 2550647395
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_filter_negative_shipping_returns_anchor_only
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:33
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:35: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Failed.
+"test_filter_negative_shipping_returns_anchor_only" end time: May 22 13:46 대한민국 표준시
+"test_filter_negative_shipping_returns_anchor_only" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/38 Testing: test_classify_coexisting_keywords_returns_positive
+30/38 Test: test_classify_coexisting_keywords_returns_positive
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_classify_coexisting_keywords_returns_positive"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_classify_coexisting_keywords_returns_positive" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_classify_coexisting_keywords_returns_positive"
+Randomness seeded to: 2961591424
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_classify_coexisting_keywords_returns_positive
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:38
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:40: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_classify_coexisting_keywords_returns_positive" end time: May 22 13:46 대한민국 표준시
+"test_classify_coexisting_keywords_returns_positive" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/38 Testing: test_classify_near_negative_purpose_line_returns_negative
+31/38 Test: test_classify_near_negative_purpose_line_returns_negative
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_classify_near_negative_purpose_line_returns_negative"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_classify_near_negative_purpose_line_returns_negative" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_classify_near_negative_purpose_line_returns_negative"
+Randomness seeded to: 583977213
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_classify_near_negative_purpose_line_returns_negative
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:43
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:45: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.57 sec
+----------------------------------------------------------
+Test Failed.
+"test_classify_near_negative_purpose_line_returns_negative" end time: May 22 13:46 대한민국 표준시
+"test_classify_near_negative_purpose_line_returns_negative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/38 Testing: test_aggregate_three_feedbacks_sum_equals_three
+32/38 Test: test_aggregate_three_feedbacks_sum_equals_three
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_aggregate_three_feedbacks_sum_equals_three"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_aggregate_three_feedbacks_sum_equals_three" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_aggregate_three_feedbacks_sum_equals_three"
+Randomness seeded to: 355492383
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_aggregate_three_feedbacks_sum_equals_three
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:48
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:50: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_aggregate_three_feedbacks_sum_equals_three" end time: May 22 13:46 대한민국 표준시
+"test_aggregate_three_feedbacks_sum_equals_three" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/38 Testing: test_classify_neutral_text_returns_hub_neutral
+33/38 Test: test_classify_neutral_text_returns_hub_neutral
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_classify_neutral_text_returns_hub_neutral"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_classify_neutral_text_returns_hub_neutral" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_classify_neutral_text_returns_hub_neutral"
+Randomness seeded to: 1747934060
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_classify_neutral_text_returns_hub_neutral
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:53
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:55: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_classify_neutral_text_returns_hub_neutral" end time: May 22 13:46 대한민국 표준시
+"test_classify_neutral_text_returns_hub_neutral" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/38 Testing: test_registerUnit_sentiment_keyword_classifies_new_unit
+34/38 Test: test_registerUnit_sentiment_keyword_classifies_new_unit
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_registerUnit_sentiment_keyword_classifies_new_unit"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_registerUnit_sentiment_keyword_classifies_new_unit" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_registerUnit_sentiment_keyword_classifies_new_unit"
+Randomness seeded to: 3481103300
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_registerUnit_sentiment_keyword_classifies_new_unit
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:62
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:64: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.58 sec
+----------------------------------------------------------
+Test Failed.
+"test_registerUnit_sentiment_keyword_classifies_new_unit" end time: May 22 13:46 대한민국 표준시
+"test_registerUnit_sentiment_keyword_classifies_new_unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/38 Testing: test_registerUnit_category_main_counts_after_register
+35/38 Test: test_registerUnit_category_main_counts_after_register
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_registerUnit_category_main_counts_after_register"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_registerUnit_category_main_counts_after_register" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_registerUnit_category_main_counts_after_register"
+Randomness seeded to: 174659509
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_registerUnit_category_main_counts_after_register
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:67
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:69: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.57 sec
+----------------------------------------------------------
+Test Failed.
+"test_registerUnit_category_main_counts_after_register" end time: May 22 13:46 대한민국 표준시
+"test_registerUnit_category_main_counts_after_register" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/38 Testing: test_registerUnit_duplicate_returns_duplicate_unit
+36/38 Test: test_registerUnit_duplicate_returns_duplicate_unit
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_registerUnit_duplicate_returns_duplicate_unit"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_registerUnit_duplicate_returns_duplicate_unit" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_registerUnit_duplicate_returns_duplicate_unit"
+Randomness seeded to: 2255954046
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_registerUnit_duplicate_returns_duplicate_unit
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:72
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:74: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.66 sec
+----------------------------------------------------------
+Test Failed.
+"test_registerUnit_duplicate_returns_duplicate_unit" end time: May 22 13:46 대한민국 표준시
+"test_registerUnit_duplicate_returns_duplicate_unit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/38 Testing: test_registerUnit_then_classify_anchor_still_negative
+37/38 Test: test_registerUnit_then_classify_anchor_still_negative
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_registerUnit_then_classify_anchor_still_negative"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_registerUnit_then_classify_anchor_still_negative" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_registerUnit_then_classify_anchor_still_negative"
+Randomness seeded to: 3614411087
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_registerUnit_then_classify_anchor_still_negative
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:77
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:79: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.54 sec
+----------------------------------------------------------
+Test Failed.
+"test_registerUnit_then_classify_anchor_still_negative" end time: May 22 13:46 대한민국 표준시
+"test_registerUnit_then_classify_anchor_still_negative" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/38 Testing: test_registerUnit_reflects_in_filter_same_registry
+38/38 Test: test_registerUnit_reflects_in_filter_same_registry
+Command: "C:/DEV/FeedbackAnalyzer_08/build/feedback_analyzer_tests.exe" "test_registerUnit_reflects_in_filter_same_registry"
+Directory: C:/DEV/FeedbackAnalyzer_08/build
+"test_registerUnit_reflects_in_filter_same_registry" start time: May 22 13:46 대한민국 표준시
+Output:
+----------------------------------------------------------
+Filters: "test_registerUnit_reflects_in_filter_same_registry"
+Randomness seeded to: 1504248091
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+feedback_analyzer_tests.exe is a Catch2 v3.5.4 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+test_registerUnit_reflects_in_filter_same_registry
+-------------------------------------------------------------------------------
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:82
+...............................................................................
+
+C:\DEV\FeedbackAnalyzer_08\tests\domain_tests.cpp:84: FAILED:
+explicitly with message:
+  RED
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 1 | 1 failed
+
+<end of output>
+Test time =   0.56 sec
+----------------------------------------------------------
+Test Failed.
+"test_registerUnit_reflects_in_filter_same_registry" end time: May 22 13:46 대한민국 표준시
+"test_registerUnit_reflects_in_filter_same_registry" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 22 13:46 대한민국 표준시

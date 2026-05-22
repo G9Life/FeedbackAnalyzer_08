@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libfeedback_analyzer_core.a CMakeFiles/feedback_analyzer_core.dir/tests/red_phase_stubs.cpp.obj
+C:\mingw64\bin\ranlib.exe libfeedback_analyzer_core.a

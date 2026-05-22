@@ -82,6 +82,7 @@ feedback_analyzer_cpp/
 ## 목차
 
 - [Phase 5 목표·인수 기준](#phase-5-목표인수-기준)
+- [RED 단계 To-Do 리스트](#red-단계-to-do-리스트)
 - [개요 (Overview)](#개요-overview)
 - [빠른 시작 (Quick Start)](#빠른-시작-quick-start)
 - [지원 감정·카테고리](#지원-감정카테고리-및-분류-규칙)
@@ -93,6 +94,47 @@ feedback_analyzer_cpp/
 - [생성형 AI Activities (6시간)](#생성형-ai-활용-activities-6시간)
 - [기여 가이드](#기여-가이드)
 - [라이선스](#라이선스)
+
+## RED 단계 To-Do 리스트
+
+> 이 체크리스트는 [docs/test_plan.md](./docs/test_plan.md) 기반으로 생성되었습니다.
+> 각 항목은 **RED(실패 테스트 작성) 완료** 시 체크합니다. (스텁 GREEN ≠ 레거시 수정 완료)
+>
+> **현황 (2026-05-22)**: Catch2 스켈레톤 **38건** (`FAIL("RED")` only) · ctest **0/38 PASS** · 구현(GREEN) **미착수** · 레거시 [`src/cpp`](./src/cpp) [DEF-L01~L09 Open](./docs/defect_list.md)
+
+### Track A — UI / Boundary 테스트 (7/7 스켈레톤 작성 · 전부 RED)
+- [x] TC-A-01: POST analyze text=""·"\t\n" → EMPTY_TEXT — `test_parse_plain_empty_text_returns_empty_text`
+- [x] TC-A-02: parse("만족합니다") → COLON_MISSING — `test_parse_labelbody_colon_missing_throws_colon_missing`
+- [x] TC-A-03: parse("화남:짜증납니다") → UNKNOWN_EMOTION — `test_parse_labelbody_unknown_emotion_rejects_hub_substitute`
+- [x] TC-A-04: CSV foo,bar → CSV_MISSING_TEXT_COLUMN — `test_upload_csv_missing_text_column_rejects`
+- [x] TC-A-05: POST trim 앵커 — `test_analyze_trim_anchor_stored_text`
+- [x] TC-A-06: filter(부정,배송) 1건 — `test_filter_negative_shipping_session_one_item`
+- [x] TC-A-07: CSV download 1행 / 빈 fil_data 404 — `test_download_csv_anchor_one_data_row` · `test_download_empty_fil_data_returns_not_found`
+
+### Track B — Domain / Logic 테스트 (7/7 스켈레톤 작성 · 전부 RED)
+- [x] TC-B-01: classify(앵커) → 부정 — `test_classify_anchor_text_returns_negative`
+- [x] TC-B-02: aggregate(앵커) → 부정=1 배송=1 — `test_aggregate_anchor_single_negative_and_shipping_one`
+- [x] TC-B-03: 택배만/main 경계 — `test_aggregate_subkeyword_only_shipping_zero`
+- [x] TC-B-04: filter(부정,배송) — `test_filter_negative_shipping_returns_anchor_only`
+- [x] TC-B-05: 긍·부 공존 → 긍정 — `test_classify_coexisting_keywords_returns_positive`
+- [x] TC-B-06: 화가 납니다 / 앵커 — `test_classify_near_negative_purpose_line_returns_negative` · 레거시 Open [DEF-L01](./docs/defect_list.md)
+- [x] TC-B-07: 합=3 · Hub 중립 — `test_aggregate_three_feedbacks_sum_equals_three` · `test_classify_neutral_text_returns_hub_neutral`
+
+### 보조 스켈레톤 (Track 외 · RED)
+- [x] Domain `registerUnit` 5건 — `tests/domain_tests.cpp` `[domain][register][red]`
+- [x] Boundary 파싱·필터 7건 — `tests/boundary_tests.cpp` (EMPTY_LABEL/BODY, FilterValidator)
+- [x] Data JSON/YAML 10건 — `tests/data_tests.cpp`
+
+### 커버리지 목표
+- [ ] Domain Logic: COV-01 build-cov ENABLE_COVERAGE ctest domain lcov extract entity → lines>=95% branches>=90%
+- [ ] Boundary Layer: COV-02 ctest boundary lcov extract main.cpp genhtml report-main → lines>=85% branches>=80%
+- [ ] COV-03 ctest domain+boundary coverage.info summary + check_coverage.sh → overall line>=90% branch>=85%
+
+### 결함 목록 연결
+- [x] [docs/defect_list.md](./docs/defect_list.md) 생성 및 발견 결함 기록 (DEF-001~008 스텁, DEF-L01~L10 레거시)
+- [ ] 모든 결함 수정 후 회귀 테스트 통과 확인 (현재 ctest **0/38** · 레거시 DEF-L01~L09 **Open**)
+
+---
 
 ## Phase 5 목표·인수 기준
 

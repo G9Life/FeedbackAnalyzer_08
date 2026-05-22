@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hub": { "sentiment": "중립" },
+  "priority": { "sentiment": ["긍정", "부정", "중립"] },
+  "units": [
+    { "type": "sentiment", "id": "긍정", "keywords": ["좋아요", "만족"] },
+    { "type": "sentiment", "id": "부정", "keywords": ["불만", "실망"] },
+    { "type": "sentiment", "id": "중립", "keywords": [] },
+    { "type": "category", "id": "배송", "keywordGroups": { "main": ["배송", "택배"] } }
+  ]
+}

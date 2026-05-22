@@ -4,6 +4,8 @@ project(FeedbackAnalyzer LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+option(FEEDBACK_ANALYZER_RED_PHASE "TDD RED: stub core (tests fail until GREEN src/)" ON)
+
 add_executable(feedback_analyzer
     src/cpp/main.cpp
     src/cpp/Constants.cpp
@@ -16,8 +18,6 @@ add_executable(feedback_analyzer
 
 target_include_directories(feedback_analyzer PRIVATE src/cpp)
 
-# Windows: httplib mmap uses CreateFile2 / CreateFileMappingFromApp (Win8+).
-# MinGW defaults to older WINVER unless raised here.
 if(WIN32)
     target_compile_definitions(feedback_analyzer PRIVATE
         _WIN32_WINNT=0x0A00
@@ -25,3 +25,46 @@ if(WIN32)
     )
     target_link_libraries(feedback_analyzer PRIVATE ws2_32)
 endif()
+
+# --- Catch2 tests (RED phase) ---
+include(FetchContent)
+FetchContent_Declare(
+    Catch2
+    GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+    GIT_TAG v3.5.4
+)
+FetchContent_MakeAvailable(Catch2)
+
+if(FEEDBACK_ANALYZER_RED_PHASE)
+    add_library(feedback_analyzer_core tests/red_phase_stubs.cpp)
+else()
+    message(FATAL_ERROR "GREEN sources not yet wired; use -DFEEDBACK_ANALYZER_RED_PHASE=ON")
+endif()
+
+target_include_directories(feedback_analyzer_core
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
+enable_testing()
+
+add_executable(feedback_analyzer_tests
+    tests/domain_tests.cpp
+    tests/boundary_tests.cpp
+    tests/data_tests.cpp
+)
+
+target_compile_definitions(feedback_analyzer_tests
+    PRIVATE
+        TEST_FIXTURE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/tests/fixtures"
+)
+
+target_link_libraries(feedback_analyzer_tests
+    PRIVATE
+        feedback_analyzer_core
+        Catch2::Catch2WithMain
+)
+
+include(CTest)
+include(Catch)
+catch_discover_tests(feedback_analyzer_tests)
