@@ -5,6 +5,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(FEEDBACK_ANALYZER_RED_PHASE "TDD RED: stub core (tests fail until GREEN src/)" OFF)
+option(ENABLE_COVERAGE "gcov instrumentation for entity/boundary coverage" OFF)
+
+if(ENABLE_COVERAGE)
+    add_compile_options(--coverage -O0 -g)
+    add_link_options(--coverage)
+endif()
 
 add_executable(feedback_analyzer
     src/cpp/main.cpp
@@ -26,7 +32,6 @@ if(WIN32)
     target_link_libraries(feedback_analyzer PRIVATE ws2_32)
 endif()
 
-# --- Catch2 tests (RED phase) ---
 include(FetchContent)
 FetchContent_Declare(
     Catch2
@@ -40,6 +45,8 @@ if(FEEDBACK_ANALYZER_RED_PHASE)
 else()
     add_library(feedback_analyzer_core
         src/entity/EntityCore.cpp
+        src/boundary/BoundaryCore.cpp
+        src/data/ConfigLoader.cpp
     )
 endif()
 
@@ -47,6 +54,9 @@ target_include_directories(feedback_analyzer_core
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+
+target_link_libraries(feedback_analyzer PRIVATE feedback_analyzer_core)
+target_include_directories(feedback_analyzer PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 enable_testing()
 
