@@ -1,0 +1,208 @@
+################################################################################
+project:
+  name: FeedbackAnalyzer
+  language: C++
+  standard: C++17
+  description: >
+    고객 피드백 감정·카테고리 분석. 키워드 규칙 기반 분류, 집계, 필터, 직렬화.
+  goals:
+    - Domain Invariant 검증 가능한 분석 파이프라인
+    - Boundary와 Domain 분리
+    - Catch2 TDD RED-GREEN-REFACTOR
+
+################################################################################
+code_style:
+  formatter: clang-format
+  formatter_config: .clang-format
+  naming:
+    types: PascalCase
+    functions: camelCase
+    variables: camelCase
+    constants: kPascalCase or UPPER_SNAKE_CASE
+    namespaces: lower_snake
+    files: PascalCase matching primary type
+  header_source:
+    principle: declaration in .h, definition in .cpp
+    inline_allowed: templates, constexpr one-liners, deleted/defaulted special members
+    include_guard: pragma once
+    include_order:
+      - corresponding header first in .cpp
+      - project headers
+      - third_party
+      - standard library
+  other:
+    - prefer const and explicit
+    - no using namespace std in headers
+    - UTF-8 source and u8 string literals for Korean domain strings
+
+################################################################################
+architecture:
+  layers:
+    boundary:
+      definition: >
+        HTTP, form/CSV parse, InputValidator, Presenter(HTML/JSON/CSV),
+        ErrorMapper, Session port adapter.
+      depends_on: control
+      must_not_depend_on: entity internals bypassing control
+    control:
+      definition: >
+        Application use cases: AnalyzeFeedback, UploadCsv, FilterFeedbacks,
+        ExportResults. Orchestrates entity + ports. No keyword if-else rules.
+      depends_on: entity, boundary ports (interfaces only)
+      must_not_depend_on: httplib types inside entity
+    entity:
+      definition: >
+        Feedback, LabelUnit, ConversionRule, UnitRegistry, Converter,
+        AggregateSnapshot, DomainError. Pure business rules.
+      depends_on: standard library only
+      must_not_depend_on: boundary, control, httplib, filesystem in core
+  dependency_direction: boundary -> control -> entity
+  data_adapters: loadRatios/saveRatios feed entity UnitRegistry only via control bootstrap
+
+################################################################################
+tdd_rules:
+  red_phase:
+    description: >
+      Catch2로 실패하는 테스트를 먼저 추가한다. 감정 분류·키워드·필터·직렬화 계약과
+      Domain Invariant를 테스트 제목·ASSERT로 고정한다. 프로덕션 코드는 테스트를 통과시키는
+      최소 변경만 허용한다.
+    rules:
+      - 새 동작·버그 수정은 반드시 실패하는 테스트 1개 이상을 먼저 추가한다
+      - 테스트 이름은 행위·입력·기대 결과가 드러나게 짓는다
+      - Domain 테스트는 HTTP·파일·HTML 없이 Converter·UnitRegistry·Feedback만 사용한다
+      - Boundary 테스트는 Domain을 Fake/Mock으로 대체하고 DTO·에러 코드·HTTP 상태만 검증한다
+      - 골든 문장 픽스처 변경 시 의도를 테스트 파일 주석에 남긴다
+      - 알 수 없는 감정·잘못된 형식·빈 입력은 기대 error.code를 테스트에 명시한다
+      - 집계·필터·단건 classify 불일치는 RED로 먼저 고정한다
+      - 한 RED 사이클당 하나의 실패 원인만 다룬다
+    must_not:
+      - 테스트 없이 프로덕션 로직만 수정한다
+      - 여러 Invariant를 한 테스트에 묶어 실패 원인을 흐린다
+      - GREEN을 위해 테스트 기대값·assertion을 완화한다
+      - main·httplib·cout 출력에 의존하는 Domain 단위 테스트를 작성한다
+      - 레거시 이중 키워드 테이블을 새 테스트의 기대 기준으로 삼는다
+  green_phase:
+    description: >
+      RED 테스트를 최소 구현으로 통과시킨다. UnitRegistry + Converter 단일 경로.
+      Boundary는 얇게 유지한다.
+    rules:
+      - 실패 테스트 1개(또는 동일 원인 묶음)당 최소 코드만 작성한다
+      - 감정 판별은 UnitRegistry + Converter 한 경로만 사용한다
+      - if-else 키워드 분기를 새로 늘리지 않고 Registry 조회·우선순위로 대체한다
+      - Hub 중립 미매칭 귀속·감정 1개 per Feedback·필터 정합성 테스트를 GREEN으로 만든다
+      - 카테고리 집계·필터는 main 키워드 그룹만 사용한다
+      - Domain line coverage 95% 이상, branch 90% 이상 유지한다
+      - Boundary·Data 테스트는 Fake Registry 주입한다
+      - Catch2 전체 GREEN 후 커밋한다
+    must_not:
+      - 통과를 위해 테스트·Invariant 정의를 삭제·완화한다
+      - GREEN 단계에서 대규모 리네이밍·디렉터리 이동을 동시에 수행한다
+      - HTML·CSV·JSON Presenter 로직을 Domain에 넣는다
+      - 감정 키워드를 Constants/Filters에 다시 하드코딩한다
+      - 전역 mutable 분석 상태에 새 결과를 쓴다
+  refactor_phase:
+    description: >
+      전체 테스트 GREEN 상태에서 구조만 개선한다. SRP·OCP·Dual-Track 유지.
+      행위·error.code·골든 픽스처는 변경하지 않는다.
+    rules:
+      - 리팩터 전후 Catch2 전체 GREEN 유지한다
+      - main에서 Router·Validator·Presenter·Controller 분리한다
+      - 중복 containsAny·이중 SENTIMENT 정의를 Registry 단일 로드로 통합한다
+      - 설정은 loadRatios YAML/JSON → Registry replaceAll만 추가한다
+      - 새 출력 포맷은 Presenter 추가로 확장한다
+      - 리팩터 단위는 되돌리기 쉬운 작은 범위로 쪼갠다
+    must_not:
+      - 테스트 RED 상태에서 구조 변경을 시작한다
+      - 리팩터 중 새 기능·새 Invariant를 동시에 도입한다
+      - 공개 Domain API·error.code·골든 기대값을 묵시적으로 변경한다
+      - 동작 동일 검증 없이 파일만 이동한다
+      - 테스트 없이 미사용 코드를 대량 삭제한다
+
+################################################################################
+testing:
+  framework: Catch2 v3
+  style: AAA
+  aaa:
+    arrange: 입력·Registry·Fake 주입
+    act: 단일 public API 호출
+    assert: REQUIRE 하나의 논리적 기대 per section 권장
+  fixtures:
+    golden_feedbacks: tests/fixtures/golden_feedbacks.yaml
+    registry_default: tests/fixtures/registry_default.yaml
+    rules:
+      - Domain 테스트는 InMemory UnitRegistry fixture 사용
+      - Boundary 테스트는 FakeConverter fixture 사용
+      - 파일 I/O fixture는 tests/tmp/ 아래만 사용
+      - fixture 변경 시 golden 의도 주석 필수
+  coverage:
+    domain:
+      line_min: 95
+      branch_min: 90
+    boundary:
+      line_min: 85
+      branch_min: 80
+    data:
+      line_min: 90
+      branch_min: 85
+    overall:
+      line_min: 90
+      branch_min: 85
+  tags:
+    domain: "[domain]"
+    boundary: "[boundary]"
+    integration: "[integration]"
+    data: "[data]"
+
+################################################################################
+forbidden:
+  std_cout_debug:
+    pattern: std::cout|std::cerr for debug traces in production paths
+    reason: Boundary 출력과 섞여 계약 검증 불가, 테스트 비결정성
+    alternative: Logger with level; tests use Catch2 CAPTURE or mock sink
+  magic_number_hardcoding:
+    pattern: numeric literals for sentiment priority, limits, ports without named constant
+    reason: Shotgun Surgery, 의미 불명
+    alternative: named constexpr in entity or config YAML JSON schema version field
+  catch_all_swallow:
+    pattern: catch(...) without rethrow or DomainError mapping
+    reason: 실패 이유 숨김, INV-ERR 위반
+    alternative: catch specific types; map to error.code at Boundary only
+  implementation_in_header:
+    pattern: non-template function bodies in .h except trivial inline
+    reason: ODR risk, compile time, layer leakage
+    alternative: move definitions to .cpp; pimpl if needed
+  global_mutable_state:
+    pattern: static global vectors maps for fil_data globalSent globalKw
+    reason: INV-D1 D6 붕괴, 테스트 격리 불가
+    alternative: Session repository port injected into control
+
+################################################################################
+file_structure:
+  tree: |
+    src/
+      boundary/          # httplib routes, parseForm, CsvParser, HtmlPresenter, JsonPresenter, ErrorMapper
+      control/           # AnalyzeFeedback, UploadCsv, FilterFeedbacks, ExportResults
+      entity/            # Feedback, LabelUnit, UnitRegistry, Converter, AggregateSnapshot, Status
+      data/              # loadRatios, saveRatios, YamlRegistryLoader (optional)
+    tests/
+      domain/            # Catch2 entity tests
+      boundary/          # Catch2 controller presenter tests with fakes
+      integration/       # end-to-end HTTP or app harness
+      fixtures/          # golden_feedbacks.yaml, registry_default.yaml
+      tmp/               # transient test files
+
+################################################################################
+ai_behavior:
+  layer_violation: forbidden
+  test_first: required
+  refactor_after_green: required
+  rules:
+    - entity 수정 시 boundary/control 테스트를 먼저 확인한다
+    - 사용자가 구현 없이 설계만 요청하면 코드 생성하지 않는다
+    - RED 테스트 제목·Invariant를 먼저 제안할 수 있으나 통과 코드는 GREEN에서만
+    - 한 응답에서 RED GREEN REFACTOR 단계를 섞지 않는다
+    - forbidden 패턴 생성 시 alternative를 같은 변경에 포함한다
+  must_not:
+    - control 없이 entity에서 HTTP 응답을 만든다
+    - 테스트 RED인 상태에서 public API 시그니처를 바꾼다
+    - 커버리지 수치를 실행 없이 충족했다고 주장한다
