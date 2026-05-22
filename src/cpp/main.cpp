@@ -2,11 +2,12 @@
 #include "Feedback.h"
 #include "Constants.h"
 #include "Session.h"
-#include "TextAnalyzer.h"
-#include "Filters.h"
 #include "FileHandler.h"
 #include "UIComponents.h"
 #include "Logger.h"
+#include "entity/Converter.hpp"
+#include "entity/UnitRegistry.hpp"
+#include "entity/Types.hpp"
 #include <sstream>
 #include <fstream>
 #include <algorithm>
@@ -14,9 +15,38 @@
 #include <iomanip>
 
 static std::vector<Feedback> fil_data;
-static TextAnalyzer textAnalyzer;
-static Filters filters;
 static FileHandler fileHandler;
+
+static entity::Converter& domainConverter() {
+    static entity::Converter conv(entity::UnitRegistry::defaultSnapshot());
+    return conv;
+}
+
+static std::vector<entity::Feedback> toEntityFeedbacks(const std::vector<Feedback>& legacy) {
+    std::vector<entity::Feedback> out;
+    out.reserve(legacy.size());
+    for (const auto& fb : legacy) {
+        out.emplace_back(fb.getText());
+    }
+    return out;
+}
+
+static std::vector<Feedback> fromEntityFeedbacks(const std::vector<entity::Feedback>& entityFbs) {
+    std::vector<Feedback> out;
+    out.reserve(entityFbs.size());
+    for (const auto& fb : entityFbs) {
+        out.emplace_back(fb.text);
+    }
+    return out;
+}
+
+static void fillStatsFromDomain(const std::vector<Feedback>& legacy,
+                                std::map<std::string, int>& sentimentResults,
+                                std::map<std::string, int>& keywordResults) {
+    const entity::AggregateSnapshot snap = domainConverter().aggregate(toEntityFeedbacks(legacy));
+    sentimentResults = snap.sentimentCounts;
+    keywordResults = snap.categoryCounts;
+}
 
 // URL decode utility
 static std::string urlDecode(const std::string& str) {
@@ -232,7 +262,6 @@ static std::vector<std::string> parseCsvLine(const std::string& line) {
 
 int main() {
     Constants::init();
-    Filters::initFilterKeywords();
 
     httplib::Server svr;
 
@@ -271,8 +300,7 @@ int main() {
             std::map<std::string, int> sentimentResults, keywordResults;
 
             if (!feedbacks.empty()) {
-                sentimentResults = textAnalyzer.sent(feedbacks);
-                keywordResults = textAnalyzer.kw(feedbacks);
+                fillStatsFromDomain(feedbacks, sentimentResults, keywordResults);
                 Logger::logInfo(u8"감성 분석 완료");
                 Logger::logInfo(u8"키워드 분석 완료");
             }
@@ -327,13 +355,15 @@ int main() {
             std::string keyword = params["keyword"];
 
             if (!feedbacks.empty()) {
-                auto filtered = filters.fil(feedbacks, sentiment, keyword);
-                if (!filtered.empty()) {
-                    fil_data = filtered;
-                    auto sentimentResults = textAnalyzer.sent(filtered);
-                    auto keywordResults = textAnalyzer.kw(filtered);
-                    Logger::logInfo(u8"필터링 결과: " + std::to_string(filtered.size()) + u8"개의 피드백");
-                    std::string html = renderPage("", "", "", sentimentResults, keywordResults, filtered);
+                const auto filteredEntity =
+                    domainConverter().filter(toEntityFeedbacks(feedbacks), sentiment, keyword);
+                if (!filteredEntity.empty()) {
+                    fil_data = fromEntityFeedbacks(filteredEntity);
+                    std::map<std::string, int> sentimentResults;
+                    std::map<std::string, int> keywordResults;
+                    fillStatsFromDomain(fil_data, sentimentResults, keywordResults);
+                    Logger::logInfo(u8"필터링 결과: " + std::to_string(fil_data.size()) + u8"개의 피드백");
+                    std::string html = renderPage("", "", "", sentimentResults, keywordResults, fil_data);
                     res.set_content(html, "text/html; charset=UTF-8");
                 } else {
                     Logger::logWarning(u8"필터링 결과가 없습니다.");
