@@ -4,7 +4,7 @@ project(FeedbackAnalyzer LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-option(FEEDBACK_ANALYZER_RED_PHASE "TDD RED: stub core (tests fail until GREEN src/)" ON)
+option(FEEDBACK_ANALYZER_RED_PHASE "TDD RED: stub core (tests fail until GREEN src/)" OFF)
 
 add_executable(feedback_analyzer
     src/cpp/main.cpp
@@ -38,7 +38,9 @@ FetchContent_MakeAvailable(Catch2)
 if(FEEDBACK_ANALYZER_RED_PHASE)
     add_library(feedback_analyzer_core tests/red_phase_stubs.cpp)
 else()
-    message(FATAL_ERROR "GREEN sources not yet wired; use -DFEEDBACK_ANALYZER_RED_PHASE=ON")
+    add_library(feedback_analyzer_core
+        src/entity/EntityCore.cpp
+    )
 endif()
 
 target_include_directories(feedback_analyzer_core
